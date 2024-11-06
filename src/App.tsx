@@ -36,13 +36,13 @@ const App: React.FC = () => {
     }, {} as PlayerData)
   );
 
-  const getAllActions = () => {
-    const allActions: { type: keyof PlayerActionCounts; time: string }[] = [];
-    Object.keys(players).forEach((player) => {
-        allActions.push(...players[player].actions);
-    });
-    return allActions;
-  };
+  // const getAllActions = () => {
+  //   const allActions: { type: keyof PlayerActionCounts; time: string }[] = [];
+  //   Object.keys(players).forEach((player) => {
+  //       allActions.push(...players[player].actions);
+  //   });
+  //   return allActions;
+  // };
 
   // State for storing all actions
   const [allActions, setAllActions] = useState<Action[]>([]);
@@ -81,8 +81,8 @@ const App: React.FC = () => {
   };
   
 
-  const showActionSummary = () => setShowSummary(true); // Show the action summary
-  const closeActionSummary = () => setShowSummary(false); // Close the summary
+  // const showActionSummary = () => setShowSummary(true); // Show the action summary
+  // const closeActionSummary = () => setShowSummary(false); // Close the summary
 
   // Timer states
   const [isRunning, setIsRunning] = useState(false);
