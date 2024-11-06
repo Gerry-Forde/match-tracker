@@ -120,7 +120,7 @@ const App: React.FC = () => {
           
           <div  className="match-clock-container">
             <div className="match-clock">
-              Match Time: {formatTime(elapsedTime)}
+              Time: {formatTime(elapsedTime)}
             </div>
             <button className="start-stop-button" onClick={handleStartStop}>
               {isRunning ? 'Stop' : 'Start'}
